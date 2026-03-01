@@ -1,0 +1,3 @@
+Layouting
+- Konsep Layouting (div)
+- Cara styling nya, dll
