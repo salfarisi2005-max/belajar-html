@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Layouting</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: white;
+      }
+
+      #container {
+        width: 1000px;
+        height: 100vh;
+        margin: 20px auto;
+        background: #fff;
+        padding: 20px;
+        border: 2px solid #000;
+      }
+
+      /* ================= HEADER ================= */
+
+      #header {
+        position: relative;
+      }
+
+      #logo {
+        position: relative;
+        width: 200px;
+        padding: 20px;
+        border: 2px solid black;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      #social-top {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px 20px;
+        border: 2px solid black;
+      }
+
+      #nav {
+        margin-top: 5px;
+        padding: 5px;
+        text-align: center;
+        border: 2px solid black;
+      }
+
+      /* ================= HERO ================= */
+
+      #hero {
+        margin: 20px 0;
+        padding: 40px;
+        border: 2px solid black;
+        min-height: 250px;
+      }
+
+      /* ================= TEASERS ================= */
+
+      #teasers {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+      }
+
+      .box {
+        width: 30%;
+        padding: 20px;
+        border: 2px solid black;
+      }
+
+      /* ================= FOOTER ================= */
+
+      #footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 5px solid black;
+        padding: 20px 0;
+      }
+
+      #social-bottom {
+        padding: 10px 20px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <div id="header">
+        <div id="logo">Logo</div>
+        <div id="social-top">Social Media Links</div>
+        <div id="nav">Primary navigation</div>
+      </div>
+
+      <!-- Hero Section -->
+      <div id="hero">
+        <h2>Hero image...</h2>
+        <br />
+        <p>Image slideshow / video / BIG image and text</p>
+      </div>
+
+      <!-- Teaser Section -->
+      <div id="teasers">
+        <div class="box">
+          <h3>1st teaser...</h3>
+          <br />
+          <p>More info to deeper content</p>
+        </div>
+
+        <div class="box">
+          <h3>2nd teaser...</h3>
+          <br />
+          <p>More info to deeper content</p>
+        </div>
+
+        <div class="box">
+          <h3>3rd teaser...</h3>
+          <br />
+          <p>More info to deeper content</p>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">
+        <div id="footer-text">Footer</div>
+        <div id="social-bottom">Social Media Links</div>
+      </div>
+    </div>
+  </body>
+</html>
